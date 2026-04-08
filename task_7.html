@@ -1,0 +1,155 @@
+<!-- task is to do this form is in link below -->
+<!-- https://tgsrtcpass.com/generalbuspass.do?category=Fresh -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for icon to display on tab -->
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdgMCh_X1oqJpxQ6eITAOMBFPVkbtCGrvPIg&s">
+</head>
+<body>
+    <form>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdgMCh_X1oqJpxQ6eITAOMBFPVkbtCGrvPIg&s" alt="image" height="50" width="50" align="center">
+    <h2>TELANGA STATE ROAD TRANSPORT CORPORATION</h2>
+    <h2>GENERAL BUS APPLICATION</h2>
+    <fieldset>
+        
+        <legend><h3>Applicant Details</h3></legend>
+        <form action="./response.html">
+        <label for="nam">Name</label>
+        <input type="name" id="nam" name="UserName" maxlength="20" required >
+        &nsbp;&nsbp;&nsbp;&nsbp;&nsbp;&nsbp;
+        <label for="nam1">Father's/Gaurdian's Name</label>
+        <input type="name" id="nam1" name="FatherName" >
+        <br>
+        <br>
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="date of birth" required>
+        <label >Gender</label>
+        <!-- using label without id and for still it get clicking on radio button while clicking of the text -->
+        <label>
+        <input type="radio" id="Female" name="gender" required>Female
+        </label>
+        <label>
+        <input type="radio" id="Male" name="gender" reqiured>Male
+        </label>
+        <br>
+        <br>
+        <label for="age">Age As on:</label>
+        <input type="number" id="age" name="age" minlen="1">
+        <label for="aadhar">Aadhar No:</label>
+        <input type="number" id="aadhar" name="aadhar" minlen="12" maxlen="12">
+        <br>
+        <br>
+        <label for="whatsapp">WhatsApp No</label>
+        <input type="number" id="whatsapp" minlength="10" maxlength="10" patterb="[6-9][0-9]+" required>
+        <label for="email">E-mail Id</label>
+        <input type="email" id="email" pattern="[A-Z]+[a-z]+[0-9]+[!@#$%^&*]+@gmail.com" required>
+        <br>
+        <br>
+        <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo">
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Residential Address Details</h3></legend>
+        <form action="./response.html">
+            <label for="address">Applicant's Address</label>
+            <textarea name="address" id="address" maxlength="20"required>Enter your Address</textarea>
+            <label for="district" >District</label>
+            <!-- <input id="district" name="district"> -->
+            <select id="district" name="district">
+                <option value="hyderabad" required>hyderabad</option>
+        </select>
+        <br>
+        <br>
+        <label for="mandal">Mandal</label>
+        <!-- <input id="mandal" name="mandal"> -->
+        <select id="mandal" name="mandal">
+            <option value="hyderabad" required>hyderabad</option>
+        </select>
+        <label for="village" >District</label>
+            <!-- <input id="village" name="village"> -->
+            <select id="village" name="village">
+                <option value="hyderabad" required>hyderabad</option>
+        </select>
+        <br>
+        <br>
+        <label for="pincode">Pincode</label>
+        <input id="pincode" name="pincode" required>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Pass Type Details</h3></legend>
+        <form>
+            <label for="city">City</label>
+            <select id="city" name="city">
+                <option value="Hyderabad" required>Hyderabad</option>
+            </select>
+            <br>
+            <br>
+            <label for="passtype">Pass Type</label>
+            <select>
+                <option value="-----select-----">-----select-----</option>
+                <option value="GREATER PASS">GREATER PASS</option>
+                <option value="GENERAL ORDINARY ROUTE PASS MTLY"></option>
+                <option value="GENERAL METRO EXPRESS ROUTE PASS MTLY">GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+                <option value="ORDINARY PASS"></option>
+                <option value="METRO EXPRESS PASS"></option>
+                <option value="METRO DELUXE PASS"></option>
+            </select>
+            <br>
+            <br>
+            <label for="place">From Place District</label>
+            <select id="place" name="place">
+                <option value="Hyderabad" required>Hyderabad</option>
+            </select>
+            <label for="place">To Place District</label>
+            <select id="place" name="place">
+                <option value="-----select-----" required>-----Select-----</option>
+            </select>
+            <br>
+            <br>
+            <label for="place">From Place</label>
+            <input id="place" name="place" required>
+            <label for="place">To Place</label>
+            <input id="place" name="place" required>
+            <br>
+            <br>
+            <label for="route">Route</label>
+            <select id="route" name="route">
+                <option value="select" required>Select</option>
+            </select>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Mode of Payment & Pass Collection</h3></legend>
+        <form>
+            <label for="payment">Payment Mode</label>
+            <select id="payment" name="payment">
+                <option value="Select Payment Mode" required>Select Payment Mode</option>
+            </select>
+            <br>
+            <br>
+            <label for="pass delivery mode">Pass Delivery Mode</label>
+            <select id="payment" name="payment">
+                <option value="Select Pass Delivery Mode" required>Select Pass Delivery Mode</option>
+            </select>
+            <br>
+            <br>
+            <label for="center">Center at which you want to Collect Pass</label>
+            <select id="center" name="center">
+                <option value="-----Select-----" required>-----Select-----</option>
+            </select>
+
+            
+        </form>
+    </fieldset>
+    <br>
+    <br>
+        <input  type="submit" value="submit">
+</form>
+</body>
+</html>

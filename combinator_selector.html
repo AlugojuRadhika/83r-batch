@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* direct chids of main */
+        /* .main1>p{
+            color:red;
+        } */
+
+/* indirect childs of p */
+        /* .sub1>h1,h2{
+            color:red;
+        } */
+        .main1>sub1>h1,h2{
+            color:green;
+        }
+        /* 1 */
+        .main1>.lang1{     
+            color:brown;
+        }
+        /* 2 */
+        .main1>p{    
+            color:yellow;
+        }
+        /* 3 */
+         .main1 p{   
+            color: purple;
+         }
+         /* 4 */
+          .main+h1,h2{   
+            color:yellow;
+          }
+           .sub1~p{
+            color:rgb(148, 241, 8);
+          }
+        .main1>.sub1p{
+            color:aqua;
+        }
+        .main1~p{
+            color:blue;
+        }
+        /* .main2>h4{
+            color:red;
+        } */
+         .main2>h4,h4{
+            color:red;
+        }
+        .main2>h4+h4{
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main1">
+    <p class="lang1">83r Students</p>
+    <p class="lang2">brave Students</p>
+    <p class="lang3">lazy fellows</p>
+    <div class="sub1">
+        <h1>Talented</h1>
+        <h2>Mirchi Bajji</h2>
+    </div>
+    <p class="lang4">chai</p>
+</div>
+    <div class="main2">
+        <h4>samosa</h4>
+        <h4>pav baji</h4>
+    </div>
+    <p class="lang5">pani puri</p>
+</body>
+</html>
